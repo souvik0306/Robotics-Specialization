@@ -5,5 +5,6 @@ This repo is a part of Coursera's Robotics: Aerial Robotics Specialization by Un
 Week - 1:
 Energetics and System Design - 
 
-1. Thurst Weight Excercise
-2. Gain Tuning Excercise
+1. Gain Tuning Excercise
+2. Thurst Weight Excercise
+
