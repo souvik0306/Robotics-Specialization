@@ -3,9 +3,8 @@
 This repo is a part of Coursera's Robotics: Aerial Robotics Specialization by University of Pennyslyvania 
 
 Week - 1:
-Design Considerations - 
+Energetics and System Design - 
 
-a. Gain Tunining Exercise: 
+1. Gain Tuning Excercise
+2. Thurst Weight Excercise
 
-1. Thurst Weight Excercise
-2. Gain Tuning Excercise
