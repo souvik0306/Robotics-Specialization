@@ -7,4 +7,5 @@ Energetics and System Design -
 
 1. Gain Tuning Excercise
 2. Thurst Weight Excercise
+3. Stopping Distance Excercise - 12.3 m/s
 
