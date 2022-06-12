@@ -1,6 +1,6 @@
 # Robotics-Specialization
 
-This repo is a part of Coursera's Robotics: Aerial Robotics Specialization by University of Pennyslyvania 
+This repo is a part of Coursera's Robotics: Aerial Robotics Specialization by University of Pennsylvania
 
 Week - 1:
 Energetics and System Design - 
