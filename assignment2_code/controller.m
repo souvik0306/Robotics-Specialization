@@ -16,7 +16,30 @@ function [ u1, u2 ] = controller(~, state, des_state, params)
 
 u1 = 0;
 u2 = 0;
-
+m = params.mass;
+g = params.gravity;
+Ixx = params.Ixx;
+kvz = 2*100;
+kpz = 4*250;
+kvp = 2*100;
+kpp = 4*250;
+kvy = 2*100;
+kpy = 4*250;
+edz = des_state.vel(2)-state.vel(2);
+ez = des_state.pos(2)-state.pos(2);
+edy = des_state.vel(1)-state.vel(1);
+ey = des_state.pos(1)-state.pos(1);
+yacc = -g*state.rot;
+eddy = des_state.acc(1)-yacc;
+yddd = -g*state.omega;
+edddy= -yddd;
+phic = -1/g*(des_state.acc(1) + kvy*edy + kpy*ey);
+phicd = -1/g*(kvy*eddy + kpy*edy);
+phicdd= -1/g*(kvy*edddy + kpy*eddy);
+ep  = phic - state.rot;
+edp = phicd - state.omega;
+u1 = m * (g + des_state.acc(2) + kvz*edz + kpz*ez);
+u2 = Ixx * (phicdd + kvp*edp + kpp*ep);
 % FILL IN YOUR CODE HERE
 
 end
