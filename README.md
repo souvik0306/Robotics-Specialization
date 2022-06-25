@@ -13,3 +13,5 @@ Energetics and System Design -
 Week - 2:
 Quadcoptor Kinematics - 
 1. Rotation Matrix - Ans: No
+
+<img src="https://github.com/souvik0306/Robotics-Specialization/blob/main/Media/Assignement_2.gif" width="600" height="300">
