@@ -18,3 +18,7 @@ Quadcoptor Kinematics -
 
 <img src="https://github.com/souvik0306/Robotics-Specialization/blob/main/Media/Assignement_2_line.gif" width="500" height="400">
 
+Week -3:
+1. Outer - Position, Inner - Orientation.
+2. 9 i.e. (k = 5*2-1)
+3. All options except, quadcoptor is small.
