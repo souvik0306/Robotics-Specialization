@@ -20,5 +20,5 @@ Quadcoptor Kinematics -
 
 Week -3:
 1. Outer - Position, Inner - Orientation.
-2. 9 i.e. (k = 5*2-1)
+2. 9 i.e. (k = 5x2-1)
 3. All options except, quadcoptor is small.
