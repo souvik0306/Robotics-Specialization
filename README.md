@@ -18,7 +18,7 @@ Quadcoptor Kinematics -
 
 <img src="https://github.com/souvik0306/Robotics-Specialization/blob/main/Media/Assignement_2_line.gif" width="500" height="400">
 
-Week -3:
+Week - 3:
 Trajectory Tracking in 3-Dimensions - 
 
 Following must be kept zero while howering - 
