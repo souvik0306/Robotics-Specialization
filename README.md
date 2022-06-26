@@ -20,7 +20,8 @@ Quadcoptor Kinematics -
 
 Week -3:
 Trajectory Tracking in 3-Dimensions - 
-a. Following must be kept zero while howering - 
+
+Following must be kept zero while howering - 
 i. Roll Angle
 ii. Linear Velocity along z-axis
 iii. Pitch Angle
