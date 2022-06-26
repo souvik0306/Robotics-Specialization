@@ -19,6 +19,13 @@ Quadcoptor Kinematics -
 <img src="https://github.com/souvik0306/Robotics-Specialization/blob/main/Media/Assignement_2_line.gif" width="500" height="400">
 
 Week -3:
+Trajectory Tracking in 3-Dimensions - 
+a. Following must be kept zero while howering - 
+i. Roll Angle
+ii. Linear Velocity along z-axis
+iii. Pitch Angle
+
+Week 3 Quiz - 
 1. Outer - Position, Inner - Orientation.
 2. 9 i.e. (k = 5x2-1)
 3. All options except, quadcopter is small.
