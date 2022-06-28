@@ -8,7 +8,7 @@ function [F, M] = controller(t, state, des_state, params)
 %   des_state: The desired states are:
 %   des_state.pos = [x; y; z], des_state.vel = [x_dot; y_dot; z_dot],
 %   des_state.acc = [x_ddot; y_ddot; z_ddot], des_state.yaw,
-%   des_state.yawdot
+%   des_state.yaw_dot
 %
 %   params: robot parameters
 
@@ -18,11 +18,45 @@ function [F, M] = controller(t, state, des_state, params)
 
 % =================== Your code goes here ===================
 
-% Thrust
-F = 0;
+% Gains
+Kd=[2; 2; 2];
+Kp=[100; 100; 100];
+Kd_ang=[1; 1; 1];
+Kp_ang=[180; 200; 200];
+
+
+grav=params.gravity;
+mass=params.mass;
+
+% Compute command accelerations
+cmd_accel=des_state.acc + ...
+    Kd.*(des_state.vel-state.vel) + ...
+    Kp.*(des_state.pos-state.pos);
+
+% Thrust (force to overcome gravity plus achieve cmd_accel in z)
+F=mass*(grav + cmd_accel(3));
+
+% test for limits and force them
+if F<params.minF
+    F=params.minF;
+end
+if F>params.maxF
+    F=params.maxF;
+end
+
+% compute desired roll and pitch
+phi_des = (1/grav)*(cmd_accel(1)*sin(des_state.yaw) - ...
+    cmd_accel(2)*cos(des_state.yaw));
+theta_des = (1/grav)*(cmd_accel(1)*cos(des_state.yaw) + ...
+    cmd_accel(2)*sin(des_state.yaw));
+
+% build desired angle vector and angle rate vector
+rot_des = [phi_des; theta_des; des_state.yaw];
+omega_des = [0; 0; des_state.yawdot];
 
 % Moment
-M = zeros(3,1);
+M = Kp_ang.*(rot_des-state.rot) + ...
+    Kd_ang.*(omega_des-state.omega);
 
 % =================== Your code ends here ===================
 
