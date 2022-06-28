@@ -2,7 +2,7 @@
 
 This repo is a part of Coursera's Robotics: Aerial Robotics Specialization by University of Pennsylvania 
 
-Robotics: Aerial Robotics - [[Coursera Certificate]](https://www.coursera.org/account/accomplishments/certificate/U7UD3KBVWMXH)
+Robotics: Aerial Robotics - [[Coursera Certificate]](https://www.coursera.org/account/accomplishments/certificate/U7UD3KBVWMXH) | Reference Material - [[Hand Written Notes]](https://github.com/souvik0306/Robotics-Specialization/blob/57ec54fc22f9725fcb1f54765a6cde1b9aad8000/Aerial%20Robotics%20Notes.pdf)
 
 Week - 1:
 Energetics and System Design - 
