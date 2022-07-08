@@ -10,4 +10,4 @@ Quiz - 1:
 1. Same Length - Yes
 2. Same except Opposite - No
 3. Dimensions Increases - Exponentially
-4. A*
+4. Fastest Algorithm - A*
