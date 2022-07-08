@@ -11,3 +11,11 @@ Quiz - 1:
 2. Same except Opposite - No
 3. Dimensions Increases - Exponentially
 4. Fastest Algorithm - A*
+
+Dijkstra's Algorithm Simulation - 
+
+<img src="https://github.com/souvik0306/Robotics-Specialization/blob/main/Computational%20Motion%20Planning/Media/Djikstars_Algorithm_MATLAB.gif" width="500" height="400">
+
+A* Algorithm Simulation - 
+
+<img src="https://github.com/souvik0306/Robotics-Specialization/blob/main/Computational%20Motion%20Planning/Media/A_star_Algorithm_MATLAB.gif" width="500" height="400">
