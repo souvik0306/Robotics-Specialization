@@ -96,12 +96,40 @@ while true
     
     % Visit each neighbor of the current node and update the map, distances
     % and parent tables appropriately.
-    
-    
-    
-    
+    neighbors = [i-1 j;i+1 j;i j-1;i j+1];
+    if(i == 1 && j == 1)
+        neighbors(1,:) = ''; neighbors(2,:) = '';
+    elseif(i == 1 && j < ncols)
+        neighbors(1,:) = '';
+    elseif(j == 1 && i < nrows)
+        neighbors(3,:) = '';
+    elseif(i == nrows && j == 1)
+        neighbors(2:3,:) = '';
+    elseif(i == nrows && j < ncols)
+        neighbors(2,:) = '';
+    elseif(i == 1 && j == ncols)
+        neighbors(1,:) = ''; neighbors(3,:) = '';
+    elseif(i < nrows && j == ncols)
+        neighbors(4,:) = '';
+    elseif(i == nrows && j == ncols)
+        neighbors(2,:) = ''; neighbors(3,:) = '';
+    end
+    neigh = sub2ind(size(map), neighbors(:,1), neighbors(:,2));
+    for i=1:length(neigh)
+        if(map(neigh(i))==1 || map(neigh(i))==4 || map(neigh(i))==6 && map(neigh(1))~=2)
+            if(distanceFromStart(neigh(i)) > min_dist + 1)
+                distanceFromStart(neigh(i)) = min_dist + 1;
+                map(neigh(i)) = 4;
+                if(neigh(i)~=start_node)
+                    parent(neigh(i)) = current;
+                end
+            end
+        end
+    end
+    if(map(current)==3)
+        numExpanded = numExpanded + 1;
+    end
     %*********************************************************************
-
 end
 
 %% Construct route from start to dest by following the parent links
@@ -109,11 +137,10 @@ if (isinf(distanceFromStart(dest_node)))
     route = [];
 else
     route = [dest_node];
-    
+    numExpanded
     while (parent(route(1)) ~= 0)
         route = [parent(route(1)), route];
     end
-    
         % Snippet of code used to visualize the map and the path
     for k = 2:length(route) - 1        
         map(route(k)) = 7;

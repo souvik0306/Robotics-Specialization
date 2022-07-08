@@ -109,12 +109,38 @@ while true
     % ALL YOUR CODE BETWEEN THESE LINES OF STARS
     % Visit all of the neighbors around the current node and update the
     % entries in the map, f, g and parent arrays
-    %
-    
-    
-    
-    
-    
+    neighbors = [i-1 j;i+1 j;i j-1;i j+1];
+    if(i == 1 && j == 1)
+        neighbors(1,:) = ''; neighbors(2,:) = '';
+    elseif(i == 1 && j < ncols)
+        neighbors(1,:) = '';
+    elseif(j == 1 && i < nrows)
+        neighbors(3,:) = '';
+    elseif(i == nrows && j == 1)
+        neighbors(2:3,:) = '';
+    elseif(i == nrows && j < ncols)
+        neighbors(2,:) = '';
+    elseif(i == 1 && j == ncols)
+        neighbors(1,:) = ''; neighbors(3,:) = '';
+    elseif(i < nrows && j == ncols)
+        neighbors(4,:) = '';
+    elseif(i == nrows && j == ncols)
+        neighbors(2,:) = ''; neighbors(3,:) = '';
+    end
+    neigh = sub2ind(size(map), neighbors(:,1), neighbors(:,2));
+    for i=1:length(neigh)
+        if(map(neigh(i))==1 || map(neigh(i))==4 || map(neigh(i))==6 && map(neigh(1))~=2)
+            if(g(neigh(i)) > g(current) + 1)
+                g(neigh(i)) = g(current) + 1;
+                f(neigh(i)) = g(neigh(i)) + H(neigh(i));
+                map(neigh(i)) = 4;
+                parent(neigh(i)) = current;
+            end
+        end
+    end
+    if(map(current) == 3)
+        numExpanded = numExpanded + 1;
+    end
     %*********************************************************************
     
     
@@ -125,7 +151,7 @@ if (isinf(f(dest_node)))
     route = [];
 else
     route = [dest_node];
-    
+    numExpanded
     while (parent(route(1)) ~= 0)
         route = [parent(route(1)), route];
     end
