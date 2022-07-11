@@ -4,6 +4,7 @@ This repo is a part of Coursera's Computational Motion Planning: Robotics Specia
 
 Resources: 
 1. Dijkstra's Algorithm - [[YouTube Tutorial]](https://www.youtube.com/watch?v=XB4MIexjvY0&ab_channel=AbdulBari)
+2. Triangle Intersection - [[shubham3121's Code]](https://github.com/shubham3121/Computational-Motion-Planning/blob/master/Assignment2_CSpace/triangle_intersection.m)
 
 Quiz - 1:
 
@@ -27,4 +28,3 @@ A* Algorithm Simulation -
 <img src="https://github.com/souvik0306/Robotics-Specialization/blob/main/Computational%20Motion%20Planning/Media/A_star_Algorithm_MATLAB.gif" width="500" height="400">
 
 
-Triangle Intersection - [[shubham3121's Code]](https://github.com/shubham3121/Computational-Motion-Planning/blob/master/Assignment2_CSpace/triangle_intersection.m)
