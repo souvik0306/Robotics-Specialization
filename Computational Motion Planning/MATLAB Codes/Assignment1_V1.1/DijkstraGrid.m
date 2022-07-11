@@ -1,5 +1,5 @@
 function [route,numExpanded] = DijkstraGrid (input_map, start_coords, dest_coords)
-% Run Dijkstra's algorithm on a grid.
+% Run Dijkstras algorithm on a grid.
 % Inputs : 
 %   input_map : a logical array where the freespace cells are false or 0 and
 %   the obstacles are true or 1
