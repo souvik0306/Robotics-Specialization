@@ -2,6 +2,8 @@
 
 This repo is a part of Coursera's Computational Motion Planning: Robotics Specialization by University of Pennsylvania 
 
+Robotics: Computational Motion Planning - [[Coursera Certificate]](https://www.coursera.org/account/accomplishments/certificate/J9LBT4GW55TH) | Reference Material - [[Hand Written Notes]](https://github.com/souvik0306/Robotics-Specialization/blob/main/Computational%20Motion%20Planning/Computational%20Motion%20Planning%20Notes.pdf)
+
 Resources: 
 1. Dijkstra's Algorithm - [[YouTube Tutorial]](https://www.youtube.com/watch?v=XB4MIexjvY0&ab_channel=AbdulBari)
 2. Triangle Intersection - [[shubham3121's Code]](https://github.com/shubham3121/Computational-Motion-Planning/blob/master/Assignment2_CSpace/triangle_intersection.m)
