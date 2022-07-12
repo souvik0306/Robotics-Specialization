@@ -50,4 +50,11 @@ A* Algorithm Simulation -
 
 <img src="https://github.com/souvik0306/Robotics-Specialization/blob/main/Computational%20Motion%20Planning/Media/A_star_Algorithm_MATLAB.gif" width="500" height="400">
 
+Active Potential Field - 
+
+<img src="https://github.com/souvik0306/Robotics-Specialization/blob/main/Computational%20Motion%20Planning/Media/Active_Potential_Fields_1.jpg" width="500" height="400">
+
+
+<img src="https://github.com/souvik0306/Robotics-Specialization/blob/main/Computational%20Motion%20Planning/Media/Active_Potential_Fields_2.jpg" width="500" height="400">
+
 
