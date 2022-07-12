@@ -20,6 +20,11 @@ Quiz - 2:
 3. True
 4. True
 
+Quiz - 3:
+1. The Probabilistic RoadMap procedure tries to builds a graph that captures the structure of the entire configuration space before it tries to find a route between two points. - True
+2. The Probabilistic Roadmap (PRM) method is complete because it will always find a path through space if one exists and report failure if there is no path. - False
+3. The Rapidly Exploring Random Tree (RRT) method is complete because it will always find a path through space if one exists and report failure if there is no path. - False
+
 Dijkstra's Algorithm Simulation - 
 
 <img src="https://github.com/souvik0306/Robotics-Specialization/blob/main/Computational%20Motion%20Planning/Media/Djikstars_Algorithm_MATLAB.gif" width="500" height="400">
