@@ -5,6 +5,7 @@ This repo is a part of Coursera's Computational Motion Planning: Robotics Specia
 Resources: 
 1. Dijkstra's Algorithm - [[YouTube Tutorial]](https://www.youtube.com/watch?v=XB4MIexjvY0&ab_channel=AbdulBari)
 2. Triangle Intersection - [[shubham3121's Code]](https://github.com/shubham3121/Computational-Motion-Planning/blob/master/Assignment2_CSpace/triangle_intersection.m)
+3. Probablistic Road Map - [[souvik0306 Path Navigator Robot]](https://github.com/souvik0306/Path-Navigator-Robot)
 
 Quiz - 1:
 
