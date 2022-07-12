@@ -25,6 +25,21 @@ Quiz - 3:
 2. The Probabilistic Roadmap (PRM) method is complete because it will always find a path through space if one exists and report failure if there is no path. - False
 3. The Rapidly Exploring Random Tree (RRT) method is complete because it will always find a path through space if one exists and report failure if there is no path. - False
 
+Quiz - 4:
+<ol>
+  <li>Artificial Potential Fields are designed to:
+    <ul>
+      <li>Attract the bot to the goal
+</li>
+      <li>Repel the bot away from the obstacles</li>
+    </ul>
+  </li>
+  <li>The Artificial Potential field method is complete because it will always find a path through space if one exists and report failure if there is no path. - False</li>
+  <li>Artificial Potential Field methods can lead the robot to become stuck at locations other than the desired goal location. - True</li>
+
+
+</ol>
+
 Dijkstra's Algorithm Simulation - 
 
 <img src="https://github.com/souvik0306/Robotics-Specialization/blob/main/Computational%20Motion%20Planning/Media/Djikstars_Algorithm_MATLAB.gif" width="500" height="400">
