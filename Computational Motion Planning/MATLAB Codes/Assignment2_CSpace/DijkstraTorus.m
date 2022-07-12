@@ -1,6 +1,6 @@
 function route = DijkstraTorus (input_map, start_coords, dest_coords)
-% Run Dijkstra's algorithm on a grid.
-% Inputs : 
+    % Run Dijkstras algorithm on a grid.
+% Inputs :
 %   input_map : a logical array where the freespace cells are false or 0 and
 %      the obstacles are true or 1
 %   start_coords and dest_coords : Coordinates of the start and end cell
@@ -27,7 +27,9 @@ cmap = [1 1 1; ...
 
 colormap(cmap);
 
-
+label = true;
+input_map(:, 181) = [];
+input_map(181, :) = [];
 [nrows, ncols] = size(input_map);
 
 % map - a table that keeps track of the state of each grid cell
@@ -58,11 +60,11 @@ while true
     map(start_node) = 5;
     map(dest_node) = 6;
     
-    image(1.5, 1.5, map);
-    grid on;
-    axis image;
-    drawnow;
-    
+    %image(1.5, 1.5, map);
+    %grid on;
+    %axis image;
+    %drawnow;
+%
     % Find the node with the minimum distance
     [min_dist, current] = min(distances(:));
     
@@ -79,12 +81,27 @@ while true
     
     % Visit each neighbor of the current node and update the map, distances
     % and parent tables appropriately.
-   
-    %%% All of your code should be between the two lines of stars. 
-    % *******************************************************************
-    
-    
-    % *******************************************************************
+      
+    south_node=[i,j-1];
+    north_node=[i,j+1];
+    east_node=[i+1,j];
+    west_node=[i-1,j];
+    neighbourhood=[south_node;north_node;west_node;east_node];
+    if(i==1)
+        neighbourhood(3,:)=[nrows, j];
+    end
+    if (i == nrows)
+        neighbourhood(4,:) =[1, j];
+    end
+    if (j == 1)
+        neighbourhood(1,:) = [i, ncols];
+    end
+    if (j == ncols)
+        neighbourhood(2,:) = [i, 1];
+    end
+    for k=1:4
+        update(neighbourhood(k,1),neighbourhood(k,2),1+min_dist,current);
+    end
 end
 
 if (isinf(distances(dest_node)))
@@ -95,6 +112,7 @@ else
     while (parent(route(1)) ~= 0)
         route = [parent(route(1)), route];
     end
+    drawMap(label);
 end
 
     function update (i,j,d,p)
@@ -105,4 +123,14 @@ end
         end
     end
 
+    function drawMap(label)
+        if label==true
+        for k = 2:length(route) - 1
+            map(route(k)) = 7;
+        end
+        image(1.5, 1.5, map);
+        grid on;
+        axis image;
+        end
+        end
 end
