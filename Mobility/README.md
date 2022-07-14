@@ -13,3 +13,9 @@ Quiz 2 -
 2. Cheetah acc. wrt acc. due to gravity - 1.32
 3. House with Red Roof - Place Cells
 4. 25 Metres - Grid Cells
+
+Quiz 3 - 
+1. B - Highest Up, A - Farthest Sideways
+2. A pendulum
+3. The one on the right will have greater torque and intertia (Greater air gap radii)
+4. Opening a door and running over a rough terrain
