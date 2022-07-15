@@ -1,6 +1,6 @@
 # Robotics-Specialization
 
-This folder is a part of Coursera's Robotics: Mobility Course by University of Pennsylvania 
+This folder is a part of Coursera's Mobility: Robotics Specialization Course by University of Pennsylvania 
 
 Quiz 1 -
 1. Force
