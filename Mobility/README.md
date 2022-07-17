@@ -2,6 +2,8 @@
 
 This folder is a part of Coursera's Mobility: Robotics Specialization Course by University of Pennsylvania 
 
+3. Robotics: Computational Motion Planning - [[Coursera Certificate]](https://www.coursera.org/account/accomplishments/certificate/UAX8MXTVTTYZ) | Reference Material - [[Hand Written Notes]](https://github.com/souvik0306/Robotics-Specialization/blob/main/Computational%20Motion%20Planning/Computational%20Motion%20Planning%20Notes.pdf)
+
 Quiz 1 -
 1. Force
 2. All of the above
