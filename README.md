@@ -6,4 +6,4 @@ This repo is a part of Coursera's Robotics Specialization by University of Penns
 
 2. Robotics: Computational Motion Planning - [[Coursera Certificate]](https://www.coursera.org/account/accomplishments/certificate/J9LBT4GW55TH) | Reference Material - [[Hand Written Notes]](https://github.com/souvik0306/Robotics-Specialization/blob/main/Computational%20Motion%20Planning/Computational%20Motion%20Planning%20Notes.pdf)
 
-2. Robotics: Computational Motion Planning - [[Coursera Certificate]]https://www.coursera.org/account/accomplishments/certificate/UAX8MXTVTTYZ) | Reference Material - [[Hand Written Notes]](https://github.com/souvik0306/Robotics-Specialization/blob/main/Computational%20Motion%20Planning/Computational%20Motion%20Planning%20Notes.pdf)
+2. Robotics: Computational Motion Planning - [[Coursera Certificate]](https://www.coursera.org/account/accomplishments/certificate/UAX8MXTVTTYZ) | Reference Material - [[Hand Written Notes]](https://github.com/souvik0306/Robotics-Specialization/blob/main/Computational%20Motion%20Planning/Computational%20Motion%20Planning%20Notes.pdf)
